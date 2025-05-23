@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTDJV58GW6"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-VTDJV58GW6');
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <meta http-equiv="Cross-Origin-Resource-Policy" content="cross-origin"/>
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta http-equiv="Content-Type" content="application/json">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <title>Labores de flores - bordados a mano</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.cdnfonts.com/css/amalia-salvatore" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+
+
+        <!-- Back to top button -->
+        <button id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></button>
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Labores de flores</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Mis creaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg">Contacto / Pedidos <i class="far fa-paper-plane"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-4 align-self-end logo-main">
+                        <h1 class="text-white logo-main-text">Labores de flores</h1>
+                        <img class="logo-main-img" src="assets/img/labores-de-flores-logo-v1.png" alt="labores de flores">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Portfolio-->
+        <section class="page-section" id="portfolio">
+            <div class="container px-2 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Mis creaciones</h2>
+                        <hr class="solid my-4">
+                        <p class="text-muted mb-4">Bordados hechos a mano y con mucho 🤎. Para los amantes del campo, de las flores y de las cosas bonitas. Explora todas las categorías:</p>
+                    </div>
+
+                    <div class="alert alert-info text-center" role="alert"><i class="fa fa-truck" aria-hidden="undefined"></i>
+                    Por pedidos superiores a 100€ los gastos de envío son gratuitos.
+                    </div>
+
+                    <div id="filter-categories" align="center" class="justify-content mb-3 mt-3">
+                        <button class="btn btn-default filter-button p-2 active" data-filter="all">Todos</button>
+                        <!-- Render filter after API fetch-->
+                    </div>
+                    <div id="search-field" align="center" class="px-0  mb-3">
+                      <input class="form-control deletable" id="myInput" type="text" placeholder="Buscar por nombre de producto...">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="container-fluid p-0">
+                <div class="row g-0" id="loop">
+                <!-- Render products after API fetch-->
+                </div>
+            </div>
+         </section>
+        <!-- About-->
+        <section class="page-section bg-primary" id="about"></section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Contacta conmigo</h2>
+                        <hr class="solid my-4">
+                        <p class="text-muted mb-5">¿Quieres alguna de mis craciones? Escríbeme y te daré todos los detalles:</p>
+                        <!-- div class="row gx-4 gx-lg-5 justify-content-center">
+                                <div class="col-lg-4 text-center mb-5">
+                                    <div><i class="bi-envelope fs-2 text-muted"></i><a href="mailto:hola@laboresdeflores.es">hola@laboresdeflores.es</a></div>
+                                    <hr class="divider" />
+                                </div>
+                        </div -->
+
+                    </div>
+                </div>
+
+                <div class="container px-4 pb-lg-5">
+                    <div class="col-sm-12 text-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg">Contactar / Pedidos <i class="far fa-paper-plane"></i></button>
+                    </div>
+                </div>
+
+                <div class="modal fade bd-contact-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="undefined">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contacto / Pedidos <i class="far fa-paper-plane"></i></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body justify-content">
+
+                            <div class="justify-content-center">
+                                    <form id="submit-to-google-sheet" name="submit-to-google-sheet">
+                                        <label for="name-sn-1">Nombre:</label>
+                                        <input class="form-control" type="text" id="name-sn-1" name="name" autocomplete="name" required><br>
+                                        <label for="email-sn">Email:</label>
+                                        <input class="form-control" type="email" id="email-sn" name="email" autocomplete="email" required><br>
+                                        <label for="phone-sn">Teléfono:</label>
+                                        <input class="form-control" type="tel" id="phone-sn" name="phone" autocomplete="tel"><br>
+                                        <label for="message-sn">Mensaje:</label>
+                                        <textarea class="form-control" cols="25" id="message-sn" name="message" required></textarea><br>
+                                        <fieldset class="cart-items"><legend id="tittle-cart-items">Productos que me interesan:</legend></fieldset>
+                                        <div class="form-check form-check-inline legal">
+                                            <label class="form-check-label legal" for="legal">He leído atentamente el <a class="legal">aviso legal</a> así como su política de privacidad y con el envío de mis datos personales, otorgo mi consentimiento para que sean tratados por Labores de Flores para la finalidad expuesta.</label>
+                                            <input class="form-check-input" type="checkbox" id="legal" name="legal" value="1" aria-invalid="false" required/>
+                                        </div>                   
+                                        <button id="submit-button-sn" type="submit" value="Send">Enviar</button>
+                                    </form>
+                                    <div class="alert alert-warning text-center" role="alert" id="sending-message" style="display: none;"><i class="fa fa-cog fa-spin fa-lg fa-fw" aria-hidden="undefined"></i>Por favor, espere, su mensaje está siendo enviado...</div>
+                                    <div class="alert alert-success text-center" role="alert" id="success-message" style="display: none;"><i class="fa fa-paper-plane fa-lg fa-fw" aria-hidden="undefined"></i>Su mensaje ha sido enviado. Pronto le contestaremos. ¡Gracias!</div>
+                                    <div class="alert alert-danger text-center" role="alert" id="error-message" style="display: none;"><i class="fa fa-exclamation-triangle fa-lg fa-fw" aria-hidden="undefined"></i>Ha habido un problema, por favor reinténtelo. Disculpe las molestias.</div>
+                            </div>
+
+                        </div>
+                          <div class="modal-footer">
+                                <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Sígueme</h2>
+                        <hr class="solid my-4">
+                        <p class="text-muted mb-5">Me encontrarás en <strong>Instagram</strong>, con publicaciones donde también ¡lo bordo todo!</p>
+                        <a class="btn-social" href="https://www.instagram.com/laboresdeflores" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">Copyright &copy; 2025 - Labores de flores - <span>Todos los derechos reservados</span></div>
+                    <img class="cruz aos-init aos-animate" src="assets/img/cruz.svg" alt="" data-aos="fade-in">
+                    <div class="viva-cristo-rey small text-center text-muted">In Hoc Signo Vinces</div>
+            </div>
+            <div class="container px-4 px-lg-5">
+                <div class="col-sm-12 text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn footer" data-bs-toggle="modal" data-bs-target=".bd-legal-modal-lg">Aviso legal</button>
+                </div>
+            </div>
+            <div class="modal fade bd-legal-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="undefined">
+              <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aviso legal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body footer justify-content">
+                    <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, a continuación se reflejan los siguientes datos: La empresa titular de la web (en adelante, LA EMPRESA) pone a su disposición la siguiente información:</p>
+                    <p>Identificación: laboresdeflores.es</p>
+                    <!--p>CIF: </p-->
+                    <!--p>Dirección: </p-->
+                    <!--p>Teléfono: </p-->
+                    <!--p>Email: </p-->
+                    <!--p>Datos de registro:</p-->
+                    <p>La utilización de la web le atribuye la condición de usuario de la web (en adelante, el “Usuario”) e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal en la versión publicada por LA EMPRESA en el momento mismo en que el Usuario acceda a la Web. LA EMPRESA se reserva el derecho a modificar unilateralmente, en cualquier momento y sin previo aviso, la presentación y configuración de los contenidos y los servicios de la Web, así como las condiciones requeridas para su utilización cuando ello sea conveniente para su mejor prestación.</p>
+                    <p>El contenido de la presente web está protegido por las leyes de propiedad intelectual.</p>
+                    <p>Dichos contenidos deberán ser usados de forma correcta y licita por el usuario y, en particular queda obligado a utilizar dichos contenidos de forma diligente, correcta y lícita.</p>
+                    <p>No podrán usarse los contenidos de forma contraria a la ley, a la moral o a las buenas costumbres aceptadas en orden público.</p>
+                    <p>Está prohibida la transmisión de cualquier tipo de datos que usted pueda realizar a esta web, o a otros pertenecientes a terceras empresas cuyos links podrá encontrar dentro de esta web, que atente contra los derechos de propiedad de terceros de carácter amenazador o material que pueda ser considerado delito o falta en virtud del vigente Código Penal.</p>
+                    <p>Queda prohibida la reproducción, copia, distribución, transformación o modificación de contenidos (textos, imágenes, voces o estructura) a menos que se cuente con la autorización expresa y por escrito del titular de los derechos adquiridos.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <!-- Syc via API data from spreadsheet-->
+        <script src="js/fetch-api.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script src="js/contact.js"></script>
+
+    </body>
+</html>
