@@ -101,7 +101,7 @@ fetch(myRequest)
                             <div class="project-price col-sm-2">${rowInfo.precio}</div>
                             <div class="project-name col-sm">${rowInfo.nombre}</div>
                             <div class="project-vari col-sm-3">${rowInfo.vari}</div>
-                            <div class="project-add col-sm-1 text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" title="Al puslar se añadirá en el formulario de contacto más abajo"><i class="far fa-heart fa-lg" aria-hidden="true"></i></button></div>
+                            <div class="project-add col-sm-1 text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" title="Al puslar se añadirá en el formulario de contacto más abajo"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
                             </div>
                             <div id="options" align="center" class="d-flex justify-content-center mb-3">
                                 <button class="btn btn-default p-05 col" data-filter="detalles">Ver detalles</button>
@@ -119,7 +119,7 @@ fetch(myRequest)
                             <div class="project-price col-sm-2">${rowInfo.precio}</div>
                             <div class="project-name col-sm">${rowInfo.nombre}</div>
                             <div class="project-vari col-sm-3">${rowInfo.vari}</div>
-                            <div class="project-add col-sm-1 text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg" title="Al puslar se añadirá en el formulario de contacto más abajo"><i class="far fa-heart fa-lg" aria-hidden="true"></i></button></div>
+                            <div class="project-add col-sm-1 text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg" title="Al puslar se añadirá en el formulario de contacto más abajo"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
                             </div>
                             <div id="options" align="center" class="d-flex justify-content-center mb-3">
                                 <button class="btn btn-default p-05 col" data-filter="detalles">Ver detalles</button>
