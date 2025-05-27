@@ -11260,6 +11260,12 @@ header.masthead h1, header.masthead .h1 {
   opacity:80%;
 }
 
+#options .btn.active
+{
+    background-color: #795548;
+    color: white;
+}
+
 
 .btn
 {
@@ -11272,6 +11278,7 @@ header.masthead h1, header.masthead .h1 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 .btn:hover
 {
   color: #ffffff;
