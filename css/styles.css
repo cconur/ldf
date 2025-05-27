@@ -11468,7 +11468,7 @@ span.deleteicon input {
   }
    
   #submit-to-google-sheet label { 
-    font-size: 0.9em;
+    font-size: 1.1em;
   }
    
   #submit-to-google-sheet input, #submit-to-google-sheet textarea { 
@@ -11476,7 +11476,7 @@ span.deleteicon input {
   }
    
   #submit-to-google-sheet button { 
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 }
 
