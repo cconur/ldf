@@ -964,7 +964,7 @@ progress {
 }
 
 
-@media (min-width: 430px) {
+@media (min-width: 370px) {
   .col-sm {
     flex: 1 0 0%;
   }
@@ -11043,10 +11043,10 @@ header.masthead h1, header.masthead .h1 {
   font-size: 1rem;
 }
 
-@media (min-width: 430px) {
+@media (min-width: 370px) {
 
   header.masthead h1, header.masthead .h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   header.masthead {
     padding-top: 8rem;
