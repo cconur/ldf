@@ -11018,7 +11018,15 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 450px) {
 
   header.masthead h1, header.masthead .h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+
+@media (min-width: 550px) {
+
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
   }
 }
 
@@ -11034,12 +11042,12 @@ header.masthead h1, header.masthead .h1 {
     font-size: 1.15rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 5em;
   }
 }
 
