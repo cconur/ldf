@@ -965,6 +965,12 @@ progress {
 
 
 @media (min-width: 370px) {
+
+  .portfolio-product .info-product .project-price,
+  .portfolio-product .info-product .project-add
+  {
+    padding: 0 35px;
+  }
   .col-sm {
     flex: 1 0 0%;
   }
@@ -11178,13 +11184,17 @@ header.masthead h1, header.masthead .h1 {
 {
   border-radius: 30px;
   background-color:#262221;
-  margin:4px;
+  margin:0 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity:60%;
   text-align: center;
   color: #ffffff;
+}
+
+.portfolio-product .info-product .project-category {
+  margin: 4px 0;
 }
 
 
