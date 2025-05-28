@@ -369,9 +369,9 @@ $(document).ready(function(){
         }
         else if ((vari == "TRUE") && ($(".color.active").length === 0)) {
             alert("Debes elegir un color para la categoria: "+cat.toUpperCase());
-            $(this).scrollIntoView( {behavior: "smooth" }); 
                 if (!$(this).parent().parent().parent().find("#options .btn").hasClass("active")) {
                     $(this).parent().parent().parent().find("#options .btn").click(); 
+                    $(this).parent().parent().parent().find("#options .btn").scrollIntoView( {behavior: "smooth" });
                 }
     
         }
