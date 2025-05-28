@@ -11188,7 +11188,7 @@ header.masthead h1, header.masthead .h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 5px 10px;
   opacity:60%;
   text-align: center;
   color: #ffffff;
