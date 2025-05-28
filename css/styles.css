@@ -11188,6 +11188,7 @@ header.masthead h1, header.masthead .h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
   opacity:60%;
   text-align: center;
   color: #ffffff;
@@ -11195,6 +11196,7 @@ header.masthead h1, header.masthead .h1 {
 
 .portfolio-product .info-product .project-category {
   margin: 8px 0;
+  padding: 0px;
 }
 
 
