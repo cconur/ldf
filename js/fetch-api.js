@@ -98,10 +98,10 @@ fetch(myRequest)
                         </a>
                         <div class="row info-product mt-3">
                             <div class="project-category col-12 tag ${rowInfo.categoria.replace(re, m => chars[m]).toLowerCase()}" style="background-color: ${rowInfo.color}">${rowInfo.categoria}</div>
-                            <div class="project-price col-sm-2">${rowInfo.precio}</div>
+                            <div class="project-price col-sm-auto">${rowInfo.precio}</div>
                             <div class="project-name col-sm">${rowInfo.nombre}</div>
                             <div class="project-vari col-sm-3">${rowInfo.vari}</div>
-                            <div class="project-add col-sm-1 text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" title="Al puslar se añadirá en el formulario de contacto más abajo"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
+                            <div class="project-add col-sm-auto text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" title="Al puslar se añadirá en el formulario de contacto"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
                             </div>
                             <div id="options" align="center" class="d-flex justify-content-center mb-3">
                                 <button class="btn btn-default p-05 col" data-filter="detalles">Ver detalles</button>
@@ -116,10 +116,10 @@ fetch(myRequest)
                         </a>
                         <div class="row info-product mt-3">
                             <div class="project-category col-12 tag ${rowInfo.categoria.replace(re, m => chars[m]).toLowerCase()}" style="background-color: ${rowInfo.color}">${rowInfo.categoria}</div>
-                            <div class="project-price col-sm-2">${rowInfo.precio}</div>
+                            <div class="project-price col-sm-auto">${rowInfo.precio}</div>
                             <div class="project-name col-sm">${rowInfo.nombre}</div>
                             <div class="project-vari col-sm-3">${rowInfo.vari}</div>
-                            <div class="project-add col-sm-1 text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg" title="Al puslar se añadirá en el formulario de contacto más abajo"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
+                            <div class="project-add col-sm-auto text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg" title="Al puslar se añadirá en el formulario de contacto"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
                             </div>
                             <div id="options" align="center" class="d-flex justify-content-center mb-3">
                                 <button class="btn btn-default p-05 col" data-filter="detalles">Ver detalles</button>
@@ -361,7 +361,7 @@ $(document).ready(function(){
         `;
             target.after(newField);
             $('.cart-items').show('1000');
-            document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
+            // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
             $(".color").removeClass("active");
             $(this).parent().parent().parent().find("#options .btn").click();
             $(this).parent().parent().parent().find("div.details").find(".color-selected").text("");
@@ -369,6 +369,7 @@ $(document).ready(function(){
         }
         else if ((vari == "TRUE") && ($(".color.active").length === 0)) {
             alert("Debes elegir un color para la categoria: "+cat.toUpperCase());
+            $(this).scrollIntoView( {behavior: "smooth" }); 
                 if (!$(this).parent().parent().parent().find("#options .btn").hasClass("active")) {
                     $(this).parent().parent().parent().find("#options .btn").click(); 
                 }
@@ -387,7 +388,7 @@ $(document).ready(function(){
         `;;
             target.after(newField);
             $('.cart-items').show('1000');
-            document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
+            // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
         }
 
         else if ((vari == "FALSE") && ($('.'+nameClass).length > 0)) {
