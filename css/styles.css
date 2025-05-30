@@ -11294,6 +11294,14 @@ header.masthead h1, header.masthead .h1 {
     color: white;
 }
 
+.cart span {
+  background-color:#795548;
+  color: white;
+  padding: 2px 7px;
+  margin:0 auto;
+  text-align:center;
+  border-radius: 15px;
+} 
 
 #filter-categories .btn {
   margin: 0px 3px 6px 3px;
