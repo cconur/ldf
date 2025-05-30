@@ -154,7 +154,7 @@ fetch(myRequest)
                         const newDiv1 = document.createElement("div");
                         newDiv1.classList.add("color");
                         newDiv1.setAttribute("style", "background-color: "+rowVariant.hex);
-                        newDiv1.setAttribute("data-hex", '"'+rowVariant.hex);
+                        newDiv1.setAttribute("data-hex", rowVariant.hex);
                         newDiv1.innerHTML = `
                         <p class="color-name col">${rowVariant.color}</p>
                         `;
@@ -337,6 +337,7 @@ $(document).ready(function(){
         var price = $(this).parent().parent().find("div.project-price").text();
         var vari = $(this).parent().parent().find("div.project-vari").text();
         var color = $(this).parent().parent().parent().find("div.details").find(".color-selected").text();
+        var hexColorSel = $(".color.active").attr('data-hex');
 
         var catClass = cat.replace(re, m => chars[m]).toLowerCase();
         var nameClass = name.replace(re, m => chars[m]).toLowerCase();
@@ -363,6 +364,11 @@ $(document).ready(function(){
             $('.cart-items').show('1000');
             // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
             $(".color").removeClass("active");
+          
+            $(this).parent().parent().parent().find(".info-product .project-vari").css("background-color", hexColorSel);
+            $(this).parent().parent().parent().find(".info-product .project-vari").css("font-size", "0");
+            $(this).parent().parent().parent().find(".info-product .project-vari").show();
+          
             $(this).parent().parent().parent().find("#options .btn").click();
             $(this).parent().parent().parent().find("div.details").find(".color-selected").text("");
             //console.log($('.'+selector).length);
@@ -371,7 +377,7 @@ $(document).ready(function(){
             alert("Debes elegir un color para la categoria: "+cat.toUpperCase());
                 if (!$(this).parent().parent().parent().find("#options .btn").hasClass("active")) {
                     $(this).parent().parent().parent().find("#options .btn").click(); 
-                    $(this).parent().parent().parent().find("#options .btn").scrollIntoView( {behavior: "smooth" });
+                    $(this).parent().parent().parent().find("#options .btn").get( 0 ).scrollIntoView( {behavior: "smooth" });
                 }
     
         }
