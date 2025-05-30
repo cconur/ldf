@@ -362,6 +362,8 @@ $(document).ready(function(){
         `;
             target.after(newField);
             $('.cart-items').show('1000');
+            var numItems = $('.cart-items .form-check').length;
+            $(".cart span").text(numItems);
             // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
           
             $(this).parent().parent().parent().find(".info-product .project-vari").css("background-color", hexColorSel);
@@ -398,6 +400,8 @@ $(document).ready(function(){
         `;;
             target.after(newField);
             $('.cart-items').show('1000');
+            var numItems = $('.cart-items .form-check').length;
+            $(".cart span").text(numItems);
             // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
         }
 
