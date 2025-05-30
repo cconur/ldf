@@ -363,26 +363,30 @@ $(document).ready(function(){
             target.after(newField);
             $('.cart-items').show('1000');
             // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
-            $(".color").removeClass("active");
           
             $(this).parent().parent().parent().find(".info-product .project-vari").css("background-color", hexColorSel);
             $(this).parent().parent().parent().find(".info-product .project-vari").css("font-size", "0");
             $(this).parent().parent().parent().find(".info-product .project-vari").show();
           
             $(this).parent().parent().parent().find("#options .btn").click();
-            $(this).parent().parent().parent().find("div.details").find(".color-selected").text("");
+            $(this).attr("data-bs-original-title", "Al puslar se añadirá en el formulario de contacto más abajo");
+            //Reseteo el color de la variante:
+            //$(".color").removeClass("active");
+            //$(this).parent().parent().parent().find("div.details").find(".color-selected").text("");
             //console.log($('.'+selector).length);
         }
         else if ((vari == "TRUE") && ($(".color.active").length === 0)) {
             alert("Debes elegir un color para la categoria: "+cat.toUpperCase());
                 if (!$(this).parent().parent().parent().find("#options .btn").hasClass("active")) {
                     $(this).parent().parent().parent().find("#options .btn").click(); 
-                    $(this).parent().parent().parent().find("#options .btn").get( 0 ).scrollIntoView( {behavior: "smooth" });
+                    $(this).parent().parent().parent().parent().find(".portfolio-product").get( 0 ).scrollIntoView( {behavior: "smooth", block: "start" });
                 }
     
         }
         else if ((vari == "TRUE") && ($('.'+nameClass+'.'+colorClass).length > 0)) {
             alert("Ya has añadido el producto: "+name+", color: "+color);
+            $(this).tooltip('dispose');
+            $(this).tooltip('hide');
         }
 
         if ((vari == "FALSE") && ($('.'+nameClass).length === 0)) {
@@ -399,6 +403,8 @@ $(document).ready(function(){
 
         else if ((vari == "FALSE") && ($('.'+nameClass).length > 0)) {
             alert("Ya has añadido el producto: "+name);
+            $(this).tooltip('dispose');
+            $(this).tooltip('hide');
         }
 
 
@@ -433,6 +439,11 @@ $(document).ready(function(){
         $(this).addClass("active");
         var colorName = $(this).find(".color-name").text();
         $(this).parent().parent().find(".color-selected").text(colorName);
+
+        $(this).parent().parent().parent().find("button.add").attr("data-bs-original-title", "Pulsa aquí para añadir");
+        $(this).parent().parent().parent().find(".info-product").get( 0 ).scrollIntoView( {behavior: "smooth", block: "start" });
+        $(this).parent().parent().parent().find("button.add").tooltip('dispose');
+        $(this).parent().parent().parent().find("button.add").tooltip('show');
 
         $(this).parent().parent().parent().find("button.add").attr("data-bs-toggle", "modal");
         $(this).parent().parent().parent().find("button.add").attr("data-bs-target", ".bd-contact-modal-lg");
