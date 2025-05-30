@@ -11161,8 +11161,8 @@ header.masthead h1, header.masthead .h1 {
 
 .portfolio-product #options {
   position: absolute;
-  left: 20px;
-  top: 10px;
+  left: 25px;
+  top: 20px;
   z-index:400;
 }
 
