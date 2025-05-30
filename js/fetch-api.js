@@ -369,7 +369,7 @@ $(document).ready(function(){
             $(this).parent().parent().parent().find(".info-product .project-vari").show();
           
             $(this).parent().parent().parent().find("#options .btn").click();
-            $(this).attr("data-bs-original-title", "Al puslar se añadirá en el formulario de contacto más abajo");
+            $(this).attr("data-bs-original-title", "Al puslar se añadirá en el formulario de contacto");
             //Reseteo el color de la variante:
             //$(".color").removeClass("active");
             //$(this).parent().parent().parent().find("div.details").find(".color-selected").text("");
