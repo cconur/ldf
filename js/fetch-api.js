@@ -100,7 +100,7 @@ fetch(myRequest)
                             <div class="project-category col-12 tag ${rowInfo.categoria.replace(re, m => chars[m]).toLowerCase()}" style="background-color: ${rowInfo.color}">${rowInfo.categoria}</div>
                             <div class="project-price col-sm-auto">${rowInfo.precio}</div>
                             <div class="project-name col-sm">${rowInfo.nombre}</div>
-                            <div class="project-vari col-sm-3">${rowInfo.vari}</div>
+                            <div class="project-vari col-sm-auto">${rowInfo.vari}</div>
                             <div class="project-add col-sm-auto text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" title="Al puslar se añadirá en el formulario de contacto"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
                             </div>
                             <div id="options" align="center" class="d-flex justify-content-center mb-3">
@@ -118,7 +118,7 @@ fetch(myRequest)
                             <div class="project-category col-12 tag ${rowInfo.categoria.replace(re, m => chars[m]).toLowerCase()}" style="background-color: ${rowInfo.color}">${rowInfo.categoria}</div>
                             <div class="project-price col-sm-auto">${rowInfo.precio}</div>
                             <div class="project-name col-sm">${rowInfo.nombre}</div>
-                            <div class="project-vari col-sm-3">${rowInfo.vari}</div>
+                            <div class="project-vari col-sm-auto">${rowInfo.vari}</div>
                             <div class="project-add col-sm-auto text-center"><button class="add" data-toggle="tooltip" data-placement="bottom" data-bs-toggle="modal" data-bs-target=".bd-contact-modal-lg" title="Al puslar se añadirá en el formulario de contacto"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></button></div>
                             </div>
                             <div id="options" align="center" class="d-flex justify-content-center mb-3">
