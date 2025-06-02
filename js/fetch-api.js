@@ -364,6 +364,8 @@ $(document).ready(function(){
             $('.cart-items').show('1000');
             var numItems = $('.cart-items .form-check').length;
             $(".cart span").text(numItems);
+            $(".cart span").show();
+          
             // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
           
             $(this).parent().parent().parent().find(".info-product .project-vari").css("background-color", hexColorSel);
@@ -371,7 +373,7 @@ $(document).ready(function(){
             $(this).parent().parent().parent().find(".info-product .project-vari").show();
           
             $(this).parent().parent().parent().find("#options .btn").click();
-            $(this).attr("data-bs-original-title", "Al puslar se añadirá en el formulario de contacto");
+            $(this).attr("data-bs-original-title", "Producto añadido");
             //Reseteo el color de la variante:
             //$(".color").removeClass("active");
             //$(this).parent().parent().parent().find("div.details").find(".color-selected").text("");
@@ -402,6 +404,8 @@ $(document).ready(function(){
             $('.cart-items').show('1000');
             var numItems = $('.cart-items .form-check').length;
             $(".cart span").text(numItems);
+            $(".cart span").show();
+            $(this).attr("data-bs-original-title", "Producto añadido");
             // document.getElementById("tittle-cart-items").scrollIntoView( {behavior: "smooth" });
         }
 
