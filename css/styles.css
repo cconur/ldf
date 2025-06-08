@@ -11640,3 +11640,26 @@ hr.solid {
   font-style: italic!important;
   padding: 5px 0;
 }
+
+.glightbox-clean .gdesc-inner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  width: 95%;
+  padding: 0px 10px;
+  text-align: center;
+  font-weight:800;
+  text-shadow: #000000 1px 0 10px;
+}
+
+.glightbox-clean .gslide-title {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: arial;
+  color: #ffffff;
+  margin-bottom: 19px;
+  line-height: 1.4em
+}
+
+
