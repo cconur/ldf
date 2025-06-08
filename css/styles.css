@@ -11657,7 +11657,7 @@ hr.solid {
   font-size: 1.2em;
   font-weight: 400;
   font-family: arial;
-  color: #ffffff;
+  color: #ffffff!important;
   margin-bottom: 19px;
   line-height: 1.4em
 }
