@@ -1,5 +1,6 @@
 const head = document.getElementById("masthead");
 
+const apiKey = "AIzaSyAsVQie8btmRLZnGeJEKikmjE73MDL6450";
 
 let loader = `<div id="loader"><span class="loader"></span></div>`;
 
@@ -11,7 +12,8 @@ const aboutMeInfo = document.getElementById("about");
 
 const myFilter = document.getElementById("filter-categories");
 
-const myRequest = new Request("https://sheets.googleapis.com/v4/spreadsheets/1jDNUuG-BMQvuGj9IJTOpJ-RJQ1kWVMCUr8ojnD3w8Qw/values/products?alt=json&key=AIzaSyBbtrtE2hRGXFyyNiGPIoh4TPPZpoO2LeY");
+const myRequest = new Request("https://sheets.googleapis.com/v4/spreadsheets/1jDNUuG-BMQvuGj9IJTOpJ-RJQ1kWVMCUr8ojnD3w8Qw/values/products?alt=json&key="+apiKey);
+
 
 fetch(myRequest)
 //fetch(myRequest,  {
@@ -246,13 +248,21 @@ fetch(myRequest)
             myFilter.appendChild(newButton);
 
 
-
+    // Activate SimpleLightbox plugin for portfolio items
+    // new SimpleLightbox({
+    //     elements: '#portfolio a.portfolio-box'
+    // });
 
     // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    // In DOM can be added the file type as data attribute: data-type="image"
+    
+          var lightbox = GLightbox({
+                selector: '.portfolio-box',
+                type: 'image',
+                descPosition: 'bottom'
+          });
 
+    
 
     $(".form-control").focus(function(){
       $(".form-check.legal").show('3000'); 
