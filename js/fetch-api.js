@@ -215,6 +215,7 @@ fetch(myRequest)
         if (rowInfo.vari == "HEAD") {
         head.style.background = 'linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('+rowInfo.foto+')';
         head.style.backgroundSize = 'cover';
+        $("#portfolio .claim").text(rowInfo.descripcion);
         }
         else if (rowInfo.vari == "ABOUT") {
         aboutMeInfo.appendChild(newDiv);
